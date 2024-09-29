@@ -1,0 +1,74 @@
+/* home.module.css */
+
+/* Sidebar */
+.sidebar {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-right: 1px solid #dee2e6;
+  height: 500;
+}
+
+
+
+.listGroupItem {
+  padding: 10px 15px;
+  border: none;
+  background-color: transparent;
+}
+
+.listGroupItem a {
+  color: #000000b5;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.listGroupItem a:hover {
+  color: #1900ff;
+}
+
+/* Card */
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.cardTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Progress Bars */
+.progressBar {
+  height: 20px;
+  border-radius: 10px;
+}
+
+.mb-2 {
+  margin-bottom: 15px !important;
+}
+
+/* Upcoming Meetings */
+.upcomingMeetings ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.upcomingMeetings ul li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+/* Global Styles */
+
+
+.container-fluid {
+  padding: 20px;
+}
+
+.icon {
+  margin-right: 10px;
+}
+

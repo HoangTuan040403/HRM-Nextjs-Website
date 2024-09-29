@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
+// import "./globals.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import AppHeader from "@/components/app.header";
+import { Col, Container } from "react-bootstrap";
+import { Row } from "antd";
+import AppMenu from "@/components/app.menu";
+import styles from '../styles/home.module.css';
+import { AntdRegistry } from '@ant-design/nextjs-registry';
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,7 +34,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <AntdRegistry>
+          <AppHeader />
+          {children}
+        </AntdRegistry>
+
       </body>
     </html>
   );
